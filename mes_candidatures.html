@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Tracking</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <div class="tablet-wrapper">
+    <div class="header">
+      <h1>Job Application Tracking</h1>
+      <div id="currentDateTime"></div>
+    </div>
+
+    <div class="container">
+      <form id="jobApplicationForm">
+        <label for="date">Date d'envoi:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="company">Nom de l'entreprise:</label>
+        <input type="text" id="company" name="company" required>
+
+        <label for="position">Dénomination du poste:</label>
+        <input type="text" id="position" name="position" required>
+
+        <label for="contractType">Type de contrat:</label>
+        <input type="text" id="contractType" name="contractType" required>
+
+        <label for="source">Source de l'offre:</label>
+        <input type="text" id="source" name="source" required>
+
+        <label for="followUpDate">Date de relance:</label>
+        <input type="date" id="followUpDate" name="followUpDate" required>
+
+        <label for="status">Statut:</label>
+        <input type="text" id="status" name="status" required>
+
+        <label for="employerResponse">Réponse de l'employeur:</label>
+        <input type="text" id="employerResponse" name="employerResponse" required>
+
+        <label for="responseMode">Mode de réponse:</label>
+        <input type="text" id="responseMode" name="responseMode" required>
+
+        <label for="reasons">Motifs:</label>
+        <input type="text" id="reasons" name="reasons" required>
+
+        <label for="interview">Entretien:</label>
+        <input type="text" id="interview" name="interview" required>
+
+        <label for="profiles">Mes profils:</label>
+        <input type="text" id="profiles" name="profiles" required>
+
+        <label for="documentsSent">Documents envoyés:</label>
+        <input type="text" id="documentsSent" name="documentsSent" required>
+
+        <div class="form-button">
+          <button type="submit">Add Job Application</button>
+        </div>
+      </form>
+
+      <table id="jobApplicationTable">
+        <thead>
+          <tr>
+            <th>Date d'envoi</th>
+            <th>Nom de l'entreprise</th>
+            <th>Dénomination du poste</th>
+            <th>Type de contrat</th>
+            <th>Source de l'offre</th>
+            <th>Date de relance</th>
+            <th>Statut</th>
+            <th>Réponse de l'employeur</th>
+            <th>Mode de réponse</th>
+            <th>Motifs</th>
+            <th>Entretien</th>
+            <th>Mes profils</th>
+            <th>Documents envoyés</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Table rows will be dynamically populated from script.js -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
